@@ -398,4 +398,35 @@
 						$main._show(location.hash.substr(1), true);
 					});
 
+	// emailjs.init("akidahmansur786@gmail.com"); // Replace with your actual EmailJS user ID
+
+    // function sendMail(e) {
+    //     e.preventDefault();
+
+    //     // Get form data
+    //     const name = document.getElementById('name').value;
+    //     const email = document.getElementById('email').value;
+    //     const message = document.getElementById('message').value;
+
+    //     // Prepare template parameters
+    //     const templateParams = {
+    //         from_name: name,
+    //         from_email: email,
+    //         message: message
+    //     };
+
+    //     // Send email using EmailJS
+    //     emailjs.send('service_2iaa2f6', 'YOUR_TEMPLATE_ID', templateParams)
+    //         .then(function(response) {
+    //             console.log('SUCCESS!', response.status, response.text);
+    //             alert('Your message has been sent successfully!');
+    //             document.getElementById('contact-form').reset();
+    //         }, function(error) {
+    //             console.log('FAILED...', error);
+    //             alert('Failed to send the message. Please try again later.');
+    //         });
+    // }
+
+    // // Attach the sendMail function to the form's submit event
+    // document.getElementById('contact-form').addEventListener('submit', sendMail);
 })(jQuery);
