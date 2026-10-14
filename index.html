@@ -1,160 +1,95 @@
-<!DOCTYPE HTML>
+<!doctype html>
 <html lang="en">
-	<head>
-		<title>Mansur Akidah — Full-Stack & Network Systems Engineer</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mansur Akidah — Intro</title>
+  <meta name="description" content="Mansur Akidah — Full‑stack software engineer. I build practical web and mobile apps and integrate systems (C#, .NET, TypeScript, React, integrations)." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div class="hero-inner">
+        <h1 class="name">Mansur Akidah</h1>
+        <p class="tagline">I build practical software that helps businesses run — from web and mobile apps to backend services and system integrations.</p>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        <div class="cta-row">
+          <a class="btn primary" href="mailto:hello@example.com?subject=Hiring%20Mansur">Hire / Contact</a>
+          <button id="copyEmail" class="btn ghost" data-email="hello@example.com" aria-label="Copy email">Copy email</button>
+          <a class="btn outline" href="https://github.com/MansurAkidah" target="_blank" rel="noopener">GitHub</a>
+        </div>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo">
-							<span class="icon fa-gem"></span>
-						</div>
-						<div class="content">
-							<div class="inner">
-								<h1>Hi, I'm Mansur</h1>
-								<p>A full-stack developer and network/systems engineer building <a href="#work">multi-tenant platforms</a>
-									that tie together billing, telco infrastructure, and payments.<br />
-									Based in Nairobi, working across C#/.NET, React, and the Kenyan fintech &amp; ISP stack —
-									from <a href="#about">MikroTik and FreeRADIUS</a> to M-Pesa integrations.
-								</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#intro">Intro</a></li>
-								<li><a href="#work">Work</a></li>
-								<li><a href="#stack">Stack</a></li>
-								<li><a href="#about">About</a></li>
-								<li><a href="#contact">Contact</a></li>
-							</ul>
-						</nav>
-					</header>
+        <p class="one-liner">Projects include property management tools, marketplace comparison apps, classroom apps, and integrations with telecom/network systems.</p>
+      </div>
+    </header>
 
-				<!-- Main -->
-					<div id="main">
+    <section class="summary">
+      <article class="layman">
+        <h2>What I do (plain English)</h2>
+        <p>I turn real problems into simple, reliable tools. If you need a web or mobile app that saves time, organizes data, connects devices, or talks to other systems — I design and build that so teams can focus on their work, not the tools.</p>
+        <ul class="benefits">
+          <li>Build web & mobile apps that people actually use</li>
+          <li>Connect systems — for example, make devices, telco services, and databases work together</li>
+          <li>Deliver reliable backends so your business keeps running</li>
+        </ul>
+      </article>
 
-						<!-- Intro -->
-							<article id="intro">
-								<h2 class="major">Intro</h2>
-								<span class="image main"><img src="images/pic01.jpg" alt="" /></span>
-								<p>I'm Mansur, a developer and network/systems engineer working at the intersection of software and the
-									infrastructure it runs on. My core focus is <strong>BillSeazy</strong>, a multi-tenant ISP and hotspot
-									management platform — which means my day-to-day spans everything from ASP.NET Core backends and MySQL
-									schema design to MikroTik routers, FreeRADIUS authentication, and M-Pesa payment flows.</p>
-								<p>I like problems that sit between layers: a billing bug that's actually a RADIUS misconfiguration, a slow
-									captive portal that's actually a walled-garden rule, a "simple" dashboard that needs real-time router
-									telemetry behind it. Outside of client and product work, I maintain a handful of side projects spanning
-									e-commerce, fintech, and social apps, and I keep the servers they run on alive with my own CI/CD and
-									monitoring setup. Take a look at some of what I've built below.</p>
-							</article>
+      <aside class="tech-panel" aria-labelledby="tech-heading">
+        <h2 id="tech-heading">For fellow engineers</h2>
+        <p class="compact">High-level stack, architecture hints, and links to code.</p>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">My Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>A mix of production systems, ISP/telco infrastructure, and side projects — spanning .NET, Node, and React:</p>
-								<ul>
-									<li><strong>BillSeazy:</strong> A multi-tenant ISP &amp; hotspot billing platform tying together MikroTik routers, FreeRADIUS, and M-Pesa (Daraja STK push). Covers router management with AES-256 credential encryption, live session monitoring, revenue analytics, bulk SMS, and full WiFi hotspot lifecycle automation (purchase → RADIUS provisioning → session management → expiry). Built with C#/.NET, ASP.NET Core, EF Core, MySQL, KnockoutJS, and AdminLTE.</li>
-									<li><a href="https://g-hut-eight.vercel.app/" target="_blank"><strong>GearHut:</strong></a> A responsive e-commerce platform for phone and laptop accessories, currently being extended with a structured, category-scoped product-specification system (attributes, highlights, package contents) for an Amazon-style product detail experience.</li>
-									<li><strong>USSD Rendering System:</strong> A multi-carrier USSD platform (Onfon, Africa's Talking) handling session state, phone number normalization for Kenyan MSISDNs, saved inputs/favourites, and an in-progress analytics dashboard tracking completion rates, drop-off funnels, and navigation paths.</li>
-									<li><strong>Real Estate &amp; Smart Meter Backend:</strong> ASP.NET Core Razor Pages backend for tenant billing and water/smart-meter reporting — reconciliation logic for metered readings, running-balance reporting, and a companion .NET worker service (ManualReadings) that syncs and validates external meter data.</li>
-									<li><strong>Tujikaze:</strong> A React/TypeScript app for a family chama (self-help group) — member dashboards, M-Pesa billing, PDF minutes export, and Google Drive-backed shared memories — being extended into a multi-tenant platform for multiple families.</li>
-									<li><strong>Habibty:</strong> A couples date-planning app with a React/TypeScript/Supabase stack, full product design, and row-level-security-backed multi-user data model.</li>
-								</ul>
-								<p>Each of these has pushed me somewhere new — deeper into networking protocols on one end, product and UI design on the other. I'm always happy to talk through the trade-offs behind any of them.</p>
-							</article>
+        <div class="tech-tags">
+          <span class="tag">C# / .NET</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">React</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">Postgres</span>
+          <span class="tag">Docker</span>
+          <span class="tag">CI / GitHub Actions</span>
+          <span class="tag">USSD & MikroTik integrations</span>
+        </div>
 
-						<!-- Stack -->
-							<article id="stack">
-								<h2 class="major">Stack &amp; Competencies</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>Technologies and areas I work in regularly:</p>
-								<ul>
-									<li><strong>Backend:</strong> C#, ASP.NET Core, Entity Framework Core, Node.js/Express, MySQL, SQL Server, Dapper</li>
-									<li><strong>Frontend:</strong> React, TypeScript, KnockoutJS, Bootstrap 5, AdminLTE, DataTables, ApexCharts/Chart.js</li>
-									<li><strong>Networking &amp; Telco Infrastructure:</strong> MikroTik RouterOS, FreeRADIUS, PPPoE &amp; hotspot billing, captive portals, WireGuard, RFC 3576 CoA/Disconnect</li>
-									<li><strong>Payments &amp; Kenyan Integrations:</strong> M-Pesa Daraja (STK Push), Africa's Talking (USSD/SMS), Onfon USSD gateway</li>
-									<li><strong>DevOps:</strong> GitHub Actions CI/CD, DigitalOcean droplet management, nginx, Prometheus/Alertmanager/Blackbox Exporter, Linux administration</li>
-									<li><strong>Other:</strong> Supabase/PostgreSQL, product &amp; schema design, RESTful API design</li>
-								</ul>
-							</article>
+        <details class="details-tech">
+          <summary>Show technical details</summary>
+          <div class="tech-details">
+            <h3>Architecture & practices</h3>
+            <ul>
+              <li>Backend: C#/.NET services for business logic and integrations (REST APIs, ADO.NET for legacy systems)</li>
+              <li>Frontend: TypeScript + React for modern UI, component-driven with SCSS-based theming</li>
+              <li>Integrations: USSD services, MikroTik/network automation, proxies for system bridging</li>
+              <li>DevOps: Containerization (Docker), automated builds and tests in GitHub Actions (recommended)</li>
+            </ul>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
-								<p>I hold a Bachelor of Information Technology from JKUAT, and currently work at Leizam Ventures. My path into
-									engineering started with straightforward web development, but building an ISP billing platform pulled me
-									steadily into networking and telecom protocols — and I've stayed there since. I like that BillSeazy forces
-									me to think across the whole stack: a support ticket can start in a Razor Page and end in a MikroTik CLI
-									session.</p>
-								<p>Outside of code, I play chess and enjoy cognitive games and puzzles that exercise logical reasoning —
-									not too different from debugging a RADIUS auth flow at 11pm.</p>
-								<p>My approach to development is guided by these principles:</p>
-								<ul>
-									<li><strong>Understand before you build:</strong> I like to understand trade-offs and match existing patterns before writing new code.</li>
-									<li><strong>Iterative and pragmatic:</strong> I favor targeted, well-scoped changes over large rewrites.</li>
-									<li><strong>Own the whole path:</strong> from database schema to the CI/CD pipeline and the server it deploys to.</li>
-								</ul>
-								<p>Let's connect and create something amazing together!</p>
-							</article>
+            <h3>Evidence & repos</h3>
+            <ul>
+              <li><a href="https://github.com/leizamventuresgit/RealEstate" target="_blank" rel="noopener">RealEstate</a> — property management & integrations (C# + web)</li>
+              <li><a href="https://github.com/MansurAkidah/PriceWise" target="_blank" rel="noopener">PriceWise</a> — mobile marketplace/price comparison (TypeScript)</li>
+              <li><a href="https://github.com/MansurAkidah/Smart-ClassRoom-JS" target="_blank" rel="noopener">Smart-ClassRoom-JS</a> — React frontend + Node backend</li>
+            </ul>
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
-										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
-										<div class="field">
-											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
-										<li><input type="reset" value="Reset" /></li>
-									</ul>
-								</form>
-								<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/mansurakidah/" class="icon brands fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://www.instagram.com/mern.s.u.r/" class="icon brands fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-									<li><a href="https://github.com/MansurAkidah" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-								</ul>
-							</article>
+            <h3>Suggested quick tests</h3>
+            <p>Check the backend health endpoint, run the frontend lint & tests, and review the CI workflow for build/test steps.</p>
+          </div>
+        </details>
+      </aside>
+    </section>
 
-					</div>
+    <section class="recruiter">
+      <h2>For recruiters & hiring managers</h2>
+      <p class="pitch">I bring full-stack delivery experience across business software and product apps. I’m a fit for senior backend, full‑stack, or systems-integration roles that need someone who ships reliable products and reduces operational friction.</p>
+      <ul class="highlights">
+        <li>Roles: Senior Backend Engineer, Full‑stack Engineer, Systems Integration Engineer</li>
+        <li>Strengths: shipping product features, integrating legacy systems, practical architecture</li>
+        <li>Availability: <strong>Open to contract or full-time</strong> — contact via email or GitHub</li>
+      </ul>
+    </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<p class="copyright">&copy; Akidah. Design By: <a href="https://github.com/MansurAkidah">Me</a>.</p>
-					</footer>
+    <footer class="footer">
+      <p>Want a tailored portfolio page or a one‑page resume? <a href="mailto:hello@example.com">Email me</a> or open my <a href="https://github.com/MansurAkidah" target="_blank" rel="noopener">GitHub</a>.</p>
+    </footer>
+  </main>
 
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
+  <script src="script.js"></script>
+</body>
 </html>
